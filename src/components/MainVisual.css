@@ -1,0 +1,31 @@
+.main-visual {
+  width: 100%;
+  height: 65vh;
+  background-image: url(../image/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main-ttl {
+  margin: 0;
+  font-size: 8rem;
+  color: #fff;
+}
+
+.main-ttl .upper,
+.main-ttl .lower {
+  display: block;
+  position: absolute;
+  margin: 20px;
+}
+
+.main-ttl .upper {
+  top: 5%;
+  left: 5%;
+}
+
+.main-ttl .lower {
+  bottom: 5%;
+  right: 5%;
+}
