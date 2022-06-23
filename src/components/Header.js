@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import { useInView } from "react-intersection-observer";
 
 const Header = () => {
   return (
