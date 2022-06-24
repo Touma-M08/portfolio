@@ -1,8 +1,8 @@
 import React from "react";
-import "./About.css";
+import "./Main.css";
 import AboutImage from "../image/about.jpg";
 
-const About = () => {
+const Main = () => {
   return (
     <div className="about">
       <div className="wrapper">
@@ -25,4 +25,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Main;

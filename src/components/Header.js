@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { Link as Scroll } from "react-scroll";
 
 const Header = () => {
   return (
@@ -7,13 +8,15 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <a href="#about">ABOUT</a>
+            <Scroll to="about" smooth="true" duration="600">
+              ABOUT
+            </Scroll>
           </li>
           <li>
-            <a href="skill">SKILL</a>
+            <Scroll to="skill">SKILL</Scroll>
           </li>
           <li>
-            <a href="portfolio">PORTFOLIO</a>
+            <Scroll to="portfolio">PORTFOLIO</Scroll>
           </li>
         </ul>
       </nav>
