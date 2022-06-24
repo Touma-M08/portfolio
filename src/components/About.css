@@ -1,0 +1,32 @@
+.about {
+  padding-top: 80px;
+  background-color: rgb(240, 240, 240);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-ttl.__about::before {
+  content: "ABOUT";
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 30px 0;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 25%;
+}
+
+.profile {
+  padding-left: 20px;
+  text-align: left;
+  font-size: 1.25rem;
+}

@@ -15,7 +15,7 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path="/" element={<About />} />
 
           <Route path="/skill" element={<Skill />} />
 
