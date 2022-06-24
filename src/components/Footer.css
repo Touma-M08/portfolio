@@ -1,11 +1,11 @@
 .footer {
   background-color: #000;
+  padding: 20px 0 10px 0;
 }
 
 .footer nav {
   max-width: 600px;
   margin: 0 auto;
-  padding-top: 20px;
 }
 
 .footer nav ul {
@@ -13,12 +13,14 @@
   justify-content: center;
 }
 
-.footer nav ul li + li {
-  margin-left: 50px;
+.footer nav ul li {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 
-.footer nav ul li a {
-  color: #fff;
+.footer nav ul li + li {
+  margin-left: 50px;
 }
 
 .footer .cr {

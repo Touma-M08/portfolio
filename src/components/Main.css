@@ -1,5 +1,6 @@
+/* about */
 .about {
-  padding: 70px 0 40px;
+  padding: 80px 0 60px;
   background-color: rgb(240, 240, 240);
 }
 
@@ -12,21 +13,34 @@
   content: "ABOUT";
 }
 
-.content {
+.about .content {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 50px 30px 0;
 }
 
-img {
+.about .content img {
   width: 300px;
   height: 300px;
   border-radius: 25%;
 }
 
-.profile {
+.about .content .profile {
   padding-left: 20px;
   text-align: left;
   font-size: 1.25rem;
+}
+
+.about .content .profile p + p {
+  margin-top: 10px;
+}
+
+/* skill */
+.skill {
+  padding-top: 80px;
+}
+
+.section-ttl.__skill::before {
+  content: "SKILL";
 }

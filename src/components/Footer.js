@@ -8,13 +8,19 @@ const Footer = () => {
       <nav>
         <ul>
           <li>
-            <Scroll to="about">ABOUT</Scroll>
+            <Scroll to="about" smooth="true" duration="600" offset={-60}>
+              ABOUT
+            </Scroll>
           </li>
           <li>
-            <Scroll to="skill">SKILL</Scroll>
+            <Scroll to="skill" smooth="true" duration="600" offset={-60}>
+              SKILL
+            </Scroll>
           </li>
           <li>
-            <Scroll to="portfolio">PORTFOLIO</Scroll>
+            <Scroll to="portfolio" smooth="true" duration="600" offset={-60}>
+              PORTFOLIO
+            </Scroll>
           </li>
         </ul>
       </nav>

@@ -4,6 +4,7 @@
   background-color: #000;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .header nav {
@@ -17,14 +18,15 @@
   text-align: center;
 }
 
-.header nav ul a {
+.header nav ul li {
   font-size: 2rem;
   color: #fff;
   font-weight: bold;
   line-height: 60px;
 }
 
-.header nav ul a:hover {
+.header nav ul li:hover {
   color: rgb(182, 182, 182);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
