@@ -8,17 +8,17 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Scroll to="about" smooth="true" duration="600" offset={-60}>
+            <Scroll to="about" smooth="true" duration={600} offset={-60}>
               ABOUT
             </Scroll>
           </li>
           <li>
-            <Scroll to="skill" smooth="true" duration="600" offset={-60}>
+            <Scroll to="skill" smooth="true" duration={600} offset={-60}>
               SKILL
             </Scroll>
           </li>
           <li>
-            <Scroll to="portfolio" smooth="true" duration="600" offset={-60}>
+            <Scroll to="portfolio" smooth="true" duration={600} offset={-60}>
               PORTFOLIO
             </Scroll>
           </li>

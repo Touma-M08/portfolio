@@ -13,8 +13,8 @@ const Skill = () => {
           <ul>
             <li>
               <div className="img-box">
-                <img src={HTMLImage} alt="HTML" />
-                <img src={CSSImage} alt="CSS" />
+                <img className="HTML" src={HTMLImage} alt="HTML" />
+                <img className="CSS" src={CSSImage} alt="CSS" />
               </div>
 
               <h3 className="name">HTML/CSS</h3>

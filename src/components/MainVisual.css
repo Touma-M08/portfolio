@@ -30,3 +30,14 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* sp */
+@media screen and (max-width: 760px) {
+  .main-ttl {
+    font-size: 4rem;
+  }
+
+  .main-ttl .lower {
+    top: 75%;
+  }
+}
