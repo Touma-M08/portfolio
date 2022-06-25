@@ -10,18 +10,3 @@ a {
 li {
   list-style: none;
 }
-
-.section-ttl {
-  margin: 0;
-  font-size: 3rem;
-  position: relative;
-}
-
-.section-ttl::before {
-  font-size: 1.5rem;
-  color: rgb(250, 85, 85);
-  position: absolute;
-  top: -35%;
-  left: 50%;
-  transform: translateX(-50%);
-}

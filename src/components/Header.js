@@ -18,7 +18,9 @@ const Header = () => {
             </Scroll>
           </li>
           <li>
-            <Scroll to="portfolio">PORTFOLIO</Scroll>
+            <Scroll to="portfolio" smooth="true" duration="600" offset={-60}>
+              PORTFOLIO
+            </Scroll>
           </li>
         </ul>
       </nav>

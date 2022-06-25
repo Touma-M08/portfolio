@@ -1,12 +1,26 @@
-/* about */
-.about {
-  padding: 80px 0 60px;
-  background-color: rgb(240, 240, 240);
-}
-
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.section-ttl {
+  margin: 0;
+  font-size: 3rem;
+  position: relative;
+}
+
+.section-ttl::before {
+  font-size: 1.5rem;
+  color: rgb(250, 85, 85);
+  position: absolute;
+  top: -35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* about */
+.about {
+  padding: 80px 0 60px;
 }
 
 .section-ttl.__about::before {
@@ -38,9 +52,52 @@
 
 /* skill */
 .skill {
-  padding-top: 80px;
+  padding: 80px 0 60px;
+  background-color: rgb(240, 240, 240);
 }
 
 .section-ttl.__skill::before {
   content: "SKILL";
+}
+
+.skill ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.skill ul li {
+  margin: 10px;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 8px 8px 10px rgb(109, 108, 108);
+}
+
+.skill ul li .img-box {
+  display: flex;
+}
+
+.skill ul li img {
+  width: 150px;
+  height: 150px;
+}
+
+.skill ul li .name {
+  margin-top: 20px;
+}
+
+.skill ul li .detail {
+  margin-top: 10px;
+}
+
+/* portfolio */
+.portfolio {
+  padding-top: 80px;
+}
+
+.section-ttl.__portfolio::before {
+  content: "PORTFOLIO";
 }

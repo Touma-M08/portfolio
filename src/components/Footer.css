@@ -19,6 +19,12 @@
   font-weight: bold;
 }
 
+.footer nav ul li:hover {
+  color: rgb(182, 182, 182);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 .footer nav ul li + li {
   margin-left: 50px;
 }
