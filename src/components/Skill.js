@@ -6,7 +6,7 @@ import RailsImage from "../image/rails.svg";
 
 const Skill = () => {
   return (
-    <div>
+    <div className="pd __skill">
       <div className="skill">
         <div className="wrapper">
           <h2 className="section-ttl __skill">使用言語</h2>

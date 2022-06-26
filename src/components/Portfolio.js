@@ -9,23 +9,29 @@ const Portfolio = () => {
       title: "Toma Morino's Portfolio",
       language: "HTML/CSS, React",
       comment: "はじめてReactを用いたサイト",
+      github: "https://github.com/Touma-M08/portfolio",
+      site: "",
     },
     {
       image: Portfolio1,
       title: "テキストテキスト",
       language: "HTML",
       comment: "はじめてReactを用いたサイト",
+      github: "",
+      site: "",
     },
     {
       image: Portfolio1,
       title: "テキストテキスト",
       language: "HTML",
       comment: "はじめてReactを用いたサイト",
+      github: "",
+      site: "",
     },
   ];
 
   return (
-    <div>
+    <div className="pd">
       <div className="portfolio">
         <div className="wrapper">
           <h2 className="section-ttl __portfolio">製作実績</h2>
@@ -38,6 +44,8 @@ const Portfolio = () => {
                   title={portfolio.title}
                   language={portfolio.language}
                   comment={portfolio.comment}
+                  github={portfolio.github}
+                  site={portfolio.site}
                   key={index}
                 />
               );

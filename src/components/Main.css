@@ -151,8 +151,16 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 20;
   background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.modal.active {
+  opacity: 1;
+  transition: 0.3s;
+  z-index: 18;
 }
 
 .modal .modal-inner {
@@ -165,6 +173,11 @@
   right: 0;
   margin: 0 auto;
   border-radius: 10px;
+  z-index: -1;
+}
+
+.modal.active .modal-inner {
+  z-index: 18;
 }
 
 .modal img {
@@ -291,5 +304,170 @@
 
   .section-ttl::before {
     font-size: 1.125rem;
+  }
+
+  .pd {
+    padding-top: 60px;
+  }
+
+  .pd.__skill {
+    background-color: rgb(240, 240, 240);
+  }
+
+  /* about */
+  .about {
+    padding: 40px 0;
+    margin-top: 60px;
+  }
+
+  .about .content {
+    flex-direction: column;
+    margin: 30px 30px 0;
+  }
+
+  .about .content img {
+    width: 45%;
+    height: auto;
+  }
+
+  .about .content .profile {
+    margin-top: 15px;
+  }
+
+  .about .content .profile p + p {
+    margin-top: 5px;
+  }
+
+  /* skill */
+  .skill {
+    padding: 40px 0;
+  }
+
+  .skill ul {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .skill ul li {
+    width: 60%;
+    margin-top: 30px;
+  }
+
+  /* portfolio */
+  .portfolio {
+    padding: 40px 0 20px;
+  }
+
+  .portfolio ul {
+    flex-direction: column;
+    margin: 20px 20px 0;
+  }
+
+  .portfolio ul li + li {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .portfolio .portfolio-box {
+    transition: none;
+    filter: none;
+  }
+
+  .portfolio .portfolio-box:hover {
+    transform: none;
+    transition: none;
+    filter: none;
+  }
+
+  .portfolio .portfolio-box img {
+    width: 80%;
+  }
+
+  .portfolio .portfolio-box:hover img {
+    transition: none;
+    box-shadow: none;
+  }
+
+  .portfolio .portfolio-box p {
+    margin-top: 4px;
+  }
+
+  .modal .modal-inner {
+    width: 80%;
+    height: 70%;
+  }
+
+  .modal .portfolio-ttl {
+    font-size: 1rem;
+    margin-top: 6px;
+  }
+
+  .modal .language {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+
+  .modal .comment {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+
+  .modal .btn {
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    position: absolute;
+    transition: none;
+    background-color: rgb(202, 202, 202);
+  }
+
+  .modal .github {
+    line-height: 20px;
+  }
+
+  .modal .btn::before,
+  .modal .btn::after {
+    background: none;
+  }
+
+  .modal .btn span::before,
+  .modal .btn span::after {
+    background: none;
+  }
+
+  .modal .btn:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal .modal-inner {
+    height: auto;
+  }
+
+  .modal .modal-inner::after {
+    content: "";
+    display: block;
+    padding-bottom: 40%;
+  }
+
+  .modal .git-btn {
+    left: 5%;
+    bottom: 60px;
+  }
+
+  .modal .site-btn {
+    right: 5%;
+    bottom: 60px;
+  }
+
+  .modal .close-btn {
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
   }
 }

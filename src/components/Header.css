@@ -9,13 +9,13 @@
 
 .header nav {
   max-width: 600px;
+  height: 100%;
   margin: 0 auto;
 }
 
 .header nav ul {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+  height: 100%;
+  position: relative;
 }
 
 .header nav ul li {
@@ -23,10 +23,125 @@
   color: #fff;
   font-weight: bold;
   line-height: 60px;
+  position: absolute;
+}
+
+.header nav ul li:first-child {
+  left: 11%;
+}
+.header nav ul li:nth-child(2) {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header nav ul li:last-child {
+  right: 0;
 }
 
 .header nav ul li:hover {
   color: rgb(182, 182, 182);
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: none;
+    z-index: 0;
+    transition: 0.3s;
+  }
+
+  .header.active {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+    z-index: 10;
+  }
+
+  .header nav {
+    width: 33%;
+    height: 100vh;
+    margin: 0 0 0 auto;
+    position: absolute;
+    top: 0;
+    right: -33%;
+    opacity: 1;
+    background-color: #000;
+    transition: 0.3s;
+  }
+
+  .header.active nav {
+    right: 0;
+    transition: 0.3s;
+  }
+
+  .header nav ul li {
+    font-size: 1.125rem;
+    line-height: 0;
+  }
+
+  .header nav ul li:first-child {
+    left: 10%;
+    top: 20%;
+  }
+  .header nav ul li:nth-child(2) {
+    left: 10%;
+    top: 25%;
+    transform: none;
+  }
+  .header nav ul li:last-child {
+    right: auto;
+    left: 10%;
+    top: 30%;
+  }
+
+  .header nav ul li:hover {
+    color: #fff;
+    transition: none;
+    cursor: default;
+  }
+
+  .header .hamburger {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 15;
+  }
+
+  .header .hamburger span {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transition: 0.3s;
+    z-index: 15;
+  }
+
+  .header .hamburger span:first-child {
+    top: 25px;
+    left: 15px;
+  }
+  .header .hamburger span:nth-child(2) {
+    top: 40px;
+    left: 15px;
+  }
+  .header .hamburger span:last-child {
+    top: 55px;
+    left: 15px;
+  }
+
+  .header.active .hamburger span:first-child {
+    transform: rotate(45deg);
+    top: 40px;
+  }
+
+  .header.active .hamburger span:nth-child(2),
+  .header.active .hamburger span:last-child {
+    transform: rotate(-45deg);
+    top: 40px;
+  }
 }
